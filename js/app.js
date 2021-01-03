@@ -10,3 +10,11 @@ startGameBtn.addEventListener("click", () => {
   startGameBtn.style.display = "none";
   document.getElementById("play-area").style.opacity = "1";
 });
+
+/**
+ * Listens for the keydown event.
+ */
+
+document.addEventListener("keydown", (event) => {
+  game.handleKeydown(event);
+});
